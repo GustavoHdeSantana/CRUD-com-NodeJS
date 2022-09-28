@@ -1,7 +1,5 @@
 import { DataTypes } from "sequelize";
-import UserControllers from "../../controllers/UserControllers";
 import db from "../db";
-import { TurmaModel } from "./TurmaModel";
 
 
 export const UserModel = db.define('user', {

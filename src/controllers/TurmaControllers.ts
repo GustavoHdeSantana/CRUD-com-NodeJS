@@ -1,14 +1,9 @@
 import { Request, Response } from "express";
 import { TurmaModel } from "../database/models/TurmaModel";
-import { UserModel } from "../database/models/UserModel";
 
 class TurmaControler {
   async findALL(req: Request,res: Response) {
-    const turmas = await TurmaModel.findAll({
-      where: {
-        
-      }
-    });
+    const turmas = await TurmaModel.findAll()
     return turmas.length > 0
     ?res.status(200).json(turmas)
     :res.status(204).send();
