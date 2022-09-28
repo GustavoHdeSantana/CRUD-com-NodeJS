@@ -1,0 +1,69 @@
+###Create
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "opah123@teste.com",
+  "nome": "testeopah123",
+  "idade": 13,
+  "idturma": 1
+}
+
+### Select All
+
+GET http://localhost:3000/users
+
+### Select One
+
+GET http://localhost:3000/users/2
+
+### Select users pela turma
+
+GET http://localhost:3000/users/1
+
+### Update
+
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "idturma": 1
+}
+
+### Delete
+
+DELETE http://localhost:3000/users/6
+
+
+
+
+
+
+
+
+
+### Create Turma
+
+POST http://localhost:3000/turmas
+Content-Type: application/json
+
+{
+  "nome": "Matematica"
+}
+
+### Read Turma
+
+GET http://localhost:3000/turmas
+
+### Update
+
+PUT http://localhost:3000/turmas/4
+Content-Type:  application/json
+
+{
+  "nome": "Artes"
+}
+
+### select turma por id turma
+
+GET http://localhost:3000/users-turmas/1
